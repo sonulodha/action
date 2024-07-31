@@ -1,0 +1,12 @@
+name: My first workflow
+
+on: push
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List files
+        run: ls
+      - name: Check OS
+        run: cat /etc/os-release
